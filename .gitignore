@@ -39,4 +39,5 @@ pi1.bcf
 *.pdf
 *.swp
 *.kate-swp
-
+*.bbl
+*.idx
