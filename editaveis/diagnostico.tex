@@ -1,0 +1,141 @@
+Para a realização da pesquisa-ação será considerado um projeto em andamento da organização que possui as seguintes características:
+
+
+\begin{itemize}
+	\item Aplicativo \textit{mobile};
+	\item Equipe composta de dois times:
+		\subitem 1 time de desenvolvimento com 6 pessoas;
+		\subitem 1 equipe de gerência com 6 pessoas;
+	\item Membros inexperientes na tecnologia.
+	\item Uso de metodologia ágil;
+	\item Quantidade de \textit{Sprints}: 7;
+	\item Tamanho da \textit{Sprint}: 1 semana;
+	\item Dedicação parcial do time, visto que trata-se de uma disciplina.
+\end{itemize}
+
+
+
+O diagnóstico realizado para ver a situação atual do projeto, selecionado para o estudo, consistiu na análise 
+	dos gráficos de \textit{Burndown} das quatro primeiras \textit{Sprints} e na aplicação de um questionário para o 
+	time de desenvolvimento.
+	
+	\subsection{Análise dos gráficos de \textit{Burndown}}
+
+	Para as quatro primeiras \textit{Sprints} é possível ver nas Figuras \ref{fig:burndown0}, \ref{fig:burndown1}, \ref{fig:burndown2}
+	\ref{fig:burndown3} que os pontos realizados não correspondem a pontuação total planejada para a \textit{Sprint}. 
+	Assim é possível ver que que nem todas as histórias alocadas foram entregues, o que significa que houve atrasos nas entregas.
+
+	O acompanhamento do \textit{Burndown} por \textit{Sprint} auxiliou na visualização da distribuição do trabalho dentro da \textit{Sprint}.
+	Assim foi possível ver, por exemplo, que nas \textit{Sprints} 0 e 1 o time demorou para começar a trabalhar, o que pode ter sido uma causa do atraso. Dessa forma, impactando nas \textit{Sprints} seguintes.
+
+	\begin{figure}[!h]
+	\begin{minipage}[b]{0.5\linewidth} 
+	\centering
+	\includegraphics[scale=0.5]{figuras/burndown_sprint0.png}
+	\caption{Burndown da \textit{Sprint} 0.}
+	\label{fig:burndown0}
+	\end{minipage}
+	\hspace{0.5cm} 
+	\begin{minipage}[b]{0.5\linewidth}
+	\centering
+	\includegraphics[scale=0.5]{figuras/burndown_sprint1.png}
+	\caption{Burndown da \textit{Sprint} 1.}
+	\label{fig:burndown1}
+	\end{minipage}
+	\end{figure}
+	
+	\begin{figure}[!h]
+	\begin{minipage}[b]{0.5\linewidth} 
+	\centering
+	\includegraphics[scale=0.5]{figuras/burndown_sprint2.png}
+	\caption{Burndown da \textit{Sprint} 2.}
+	\label{fig:burndown2}
+	\end{minipage}
+	\hspace{0.5cm} 
+	\begin{minipage}[b]{0.5\linewidth}
+	\centering
+	\includegraphics[scale=0.5]{figuras/burndown_sprint3.png}
+	\caption{Burndown da \textit{Sprint} 3.}
+	\label{fig:burndown3}
+	\end{minipage}
+	\end{figure}
+
+	\vfill
+	\pagebreak
+
+	\subsection{Questionário}
+
+	A fim de coletar dados sobre a percepção dos membros sobre possíveis aspectos que afetaram a entrega nos prazos foi aplicado
+	um questionário ao time de desenvolvimento que se encontra no apêndice \ref{apendice:questionario}.
+
+	No apêndice pode ser visto que o questionário é composto de afirmações que são avaliadas pelo respondente em uma escala de 1 a 5. Na qual 1 significa discordância total da afirmação e 5 concordância total. 
+
+	As respostas coletadas foram contabilizadas de acordo com cada categoria da escala para cada afirmação. Cada afirmação tratava de um fator que poderia estar ocasionando os atrasos. Essas afirmações são:
+
+	\begin{table}[h!]
+	\centering
+	\caption{Afirmações do questionário e fatores associados}
+	\label{my-label}
+	\begin{tabular}{|l|l|}
+	\hline
+	\multicolumn{1}{|c|}{\textbf{Afirmação}}                                                     & \multicolumn{1}{c|}{\textbf{Fator}}                                                       \\ \hline
+	\begin{tabular}[c]{@{}l@{}}1. Os atrasos ocorridos decorreram dos\\  erros nas estimativas em StoryPoints.\end{tabular}                 & Erro nas estimativas                                                                      \\ \hline
+	\begin{tabular}[c]{@{}l@{}}2. A dificuldade na linguagem ocasionou\\  os atrasos nas entregas da \textit{Sprint}.\end{tabular}        & Dificuldade na linguagem                                                                  \\ \hline
+	\begin{tabular}[c]{@{}l@{}}3. O tamanho da \textit{Sprint}\\  afetou nas entregas no prazo.\end{tabular}                              & Tamanho da \textit{Sprint}                                                              \\ \hline
+	\begin{tabular}[c]{@{}l@{}}4. Os atrasos decorreram da mudança\\  de metodologia, devido ao período de adaptação.\end{tabular}          & \begin{tabular}[c]{@{}l@{}}Dificuldade na adaptação \\ para metodologia ágil\end{tabular} \\ \hline
+	\begin{tabular}[c]{@{}l@{}}5. A demora na iniciação do desenvolvimento na\\  \textit{Sprint} ocasionou os atrasos.\end{tabular}       & Procrastinação                                                                            \\ \hline
+	\begin{tabular}[c]{@{}l@{}}6. A dificuldade na comunicação afetou\\  a entrega no prazo.\end{tabular}                                   & Dificuldade na comunicação                                                                \\ \hline
+	\begin{tabular}[c]{@{}l@{}}7. A dedicação parcial do time afetou\\  a entrega no prazo.\end{tabular}                                    & Dedicação parcial do time                                                                 \\ \hline
+	\begin{tabular}[c]{@{}l@{}}8. A dificuldade no entendimento das histórias\\  acarretou nos atrasos nas \textit{sprints}.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Dificuldade no entendimento\\  das histórias\end{tabular}      \\ \hline
+	\end{tabular}
+	\end{table}
+
+	A sumarização dos resultados pode ser vista na Tabela \ref{tab:analise_respostas}.	Para uma melhor visualização das respostas também foram gerados gráficos, que também podem ser vistos em apêndice (Apêndice \ref{apendice:graficos}).
+
+	\begin{table}[!h]
+	\flushleft
+	\caption{Percentual de respostas por categoria em cada pergunta}
+	\label{tab:analise_respostas}
+	\begin{tabular}{|c|l|l|l|l|l|l|l|l|}
+	\hline
+	\textbf{\begin{tabular}[c]{@{}c@{}}Afirmação/\\ Categorias\end{tabular}} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7} & \textbf{8} \\ \hline
+	\begin{tabular}[c]{@{}c@{}}Discordo\\  totalmente\end{tabular}   & 0\%        & 0\%        & 16,67\%    & 33,33\%    & 0\%        & 0\%        & 16,67\%    & 100\%      \\ \hline
+	\begin{tabular}[c]{@{}c@{}}Discordo\\  parcialmente\end{tabular} & 0\%        & 0\%        & 33,33\%    & 33,33\%    & 0\%        & 16,67\%    & 50\%       & 0\%        \\ \hline
+	Neutro                                                           & 33,33\%    & 0\%        & 33,33\%    & 33,33\%    & 16,67\%    & 33,3\%     & 16,67\%    & 0\%        \\ \hline
+	\begin{tabular}[c]{@{}c@{}}Concordo\\  parcialmente\end{tabular} & 50\%       & 50\%       & 16,67\%    & 0\%        & 66,67\%    & 50\%       & 0\%        & 0\%        \\ \hline
+	\begin{tabular}[c]{@{}c@{}}Concordo\\  totalmente\end{tabular}   & 16,67\%    & 50\%       & 0\%        & 0\%        & 16,67\%    & 0\%        & 16,67\%    & 0\%        \\ \hline
+	\end{tabular}
+	\end{table}
+
+
+
+		\subsubsection{Análise das respostas}
+
+			Analisando os dados apresentados na tabela \ref{tab:analise_respostas} e através do acompanhamento das \textit{sprints}, é possível analisar os fatores que a equipe acredita que tenham ocasionado os atrasos.
+	
+			Dessa forma, é possível ver que a equipe considera que errou nas estimativas em \textit{StoryPoints} e isso afetou nas entregas das histórias, visto que a maioria respostas convergiu para a concordância com a afirmação. Esse fator é um fator provável dentro da organização considerada nesse trabalho, visto que as equipes são inexperientes.
+
+			Outro fator que convergiu para a concordância foi a dificuldade na linguagem. O time analisa como um grande fator que impediu o desenvolvimento das histórias no prazo.
+
+			O tamanho da \textit{sprint} foi um fator que não houve uma convergência nítida, todavia a maioria discordou ou se colocou como neutro em relação a esse fator. Assim, não é um fator que tem um peso sobre os atrasos ocorridos.
+
+			A adaptação para a nova metodologia não foi um fator responsável pelos atrasos visto que as respostas convergiram para a discordância da afirmação.
+
+			A demora na iniciação do desenvolvimento, ou seja, a procrastinação da equipe foi considerado um fator responsável pelos atrasos, visto que as respostas convergiram para a concordância.
+
+			Em relação à dificuldade na comunicação a equipe se posicionou, em sua maioria, neutra ou em uma concordância parcial. A partir disso é possível
+			ver que a dificuldade de comunicação afeta os atrasos mas com um peso bem menor que outros fatores.
+
+			Para o fator dedicação parcial é possível que a equipe, em sua maioria, não acredita ser um problema que tenha ocasionado os atrasos.
+
+			Por fim, a dificuldade no entendimento das histórias foi considerado um fator sem influência nos atrasos. Isso é perceptível já que na organização, objeto de pesquisa deste trabalho, os requisitos da aplicação são definidos pelo time.
+
+		\subsubsection{Resultado da análise}
+			Resumindo a análise dos resultados, temos que os fatores que foram considerados responsáveis pelos atrasos, que serão objetos de estudo deste trabalho, são:
+
+			\begin{itemize}
+				\item Erros nas estimativas;
+				\item Dificuldade na linguagem;
+				\item Procrastinação;
+				\item Dificuldade de comunicação;
+			\end{itemize}
