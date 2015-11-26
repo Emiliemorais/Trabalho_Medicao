@@ -1,5 +1,8 @@
 \chapter{Revisão de Literatura}
-
+  
+  Este capítulo apresenta a revisão de literatura realizada sobre os assuntos pertinentes ao trabalho, abordando
+  tópicos como metodologias ágeis e estimativa e processos de medição.
+  
 \section{Planejamento e estimativas em metodologias ágeis}
 
   As metodologias ágeis se baseiam nos valores ágeis publicados no Manifesto Ágil
@@ -107,7 +110,12 @@
 
     Em um gráfico \textit{burndown} por \textit{sprint} apresenta-se no eixo vertival o número de pontos de história restantes na sprint e no eixo horizontal os dias ao longo da \textit{sprint} \cite{cohn06}.
 
-\section{Abordagem de medições}
+\section{Processo de medição}
+  
+  "Medição é o processo pelo qual números ou símbolos são designados a atributos de entidades do mundo real para descrevê-los de 
+  acordo com regras claramente definidas" \cite{fenton97}. Para \citeonline{solingen99}, medição de \textit{software} é o processo
+  contínuo de definir, coletar e analisar dados obtidos no processo de desenvolvimento de \textit{software} para entender e controlar
+  o processo e seus produtos, bem como fornecer informações para melhorá-los.
 
   Para atingir o objetivo do trabalho, será necessário a utilização de um processo de medição para obter informações a respeito
   dos fatores de atraso identificados. Para a definição do processo de medição temos diversas abordagens, onde algumas serão
@@ -143,7 +151,7 @@
 
       \begin{figure}[!htb]
 	\centering
-	\includegraphics[scale=0.45]{figuras/iso15939}
+	\includegraphics[scale=0.55]{figuras/iso15939}
 	\caption[Modelo do processo proposto pela ISO/IEC 15939:2007.]
 		{Modelo do processo proposto pela ISO/IEC 15939:2007. Fonte: \cite{iso15939}}
 	\label{iso15939_model}
@@ -153,3 +161,47 @@
       necessidades de informação da organização \cite{iso15939}.
 
   \subsection{Método \textit{Goal-Question-Metric} (GQM)}
+  
+    O GQM representa uma abordagem sistemática para a adequação e integração de objetivos para modelos do processo de software,
+    que defende que a medição deve ser orientada a objetivos (Basili et al, 1994 \textit{apud} \cite{solingen99}). 
+    \citeonline{solingen99} afirma que "o resultado obtido com a aplicação do GQM é a especificação de uma programa
+    de medição direcionado para um conjunto particular de problemas e um conjunto de regras para a interpretação dos dados da medição".
+    
+    O modelo do GQM propõe uma abordagem \textit{top-down} para a definição das métricas e uma \textit{bottom-up} para a interpretação
+    das métricas, como ilustra a Figura \ref{gqm_model}.
+    
+    \begin{figure}[!htb]
+      \centering
+      \includegraphics[scale=0.5]{figuras/gqm_model}
+      \caption[Modelo do GQM.]
+	      {Modelo do GQM. Fonte: Basili et al, 1994 \textit{apud} \cite{solingen99}}
+      \label{gqm_model}
+    \end{figure}
+    
+    Assim como ilustra a Figura \ref{gqm_model}, para o processo de definição de métricas, primeiramente são estabelecidos objetivos
+    de medição, que devem estar alinhados com os objetivos de negócio da organização,
+    que então são refinados em questões que atendam a estes objetivos. Cada questão é refinada em métricas que são
+    capazes de prover informações que respondam à questão. Já o processo de interpretação é feito a partir das métricas, que respondem
+    às questões que as derivaram, cuja questões atendem ao seu objetivo inicial \cite{solingen99}.
+    
+    O método GQM contém quatro fases, como ilustra a Figura \ref{gqm_phases}, segundo \citeonline{solingen99}:
+    
+    \begin{itemize}
+     
+     \item \textbf{Fase de Planejamento}, onde o projeto para aplicação da medição é selecionado, caracterizado e planejado.
+     
+     \item \textbf{Fase de Definição}, onde o programa de medição é definido e documentado.
+     
+     \item \textbf{Fase de coleta de dados}, onde os dados necessários são coletados.
+     
+     \item \textbf{Fase de interpretação}, onde os dados coletados são processados e ocorre o processo de interpretação supracitado.
+     
+    \end{itemize}
+  
+    \begin{figure}[!htb]
+      \centering
+      \includegraphics[scale=0.5]{figuras/gqm_phases}
+      \caption[Fases do GQM.]
+	      {Fases do GQM. Fonte: \cite{solingen99}}
+      \label{gqm_phases}
+    \end{figure}
