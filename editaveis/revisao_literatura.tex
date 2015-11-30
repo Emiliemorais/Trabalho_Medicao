@@ -1,6 +1,9 @@
 \chapter{Revisão de Literatura}
-
-% \section{Planejamento e estimativas em metodologias ágeis}
+  
+  Este capítulo apresenta a revisão de literatura realizada sobre os assuntos pertinentes ao trabalho, abordando
+  tópicos como metodologias ágeis e estimativa e processos de medição.
+  
+\section{Planejamento e estimativas em metodologias ágeis}
 
   As metodologias ágeis se baseiam nos valores ágeis publicados no Manifesto Ágil
   (BECK, 2001 \textit{apud} \citeonline{cohn06}), que são:
@@ -17,91 +20,165 @@
  num projeto ágil, como: iteração e \textit{sprints}, \textit{story points}, \textit{velocity}, entre outros.
  Esses conceitos serão devidamente aprofundados nas próximas seções.
 
-\section{Tempo de trabalho: \textit{Sprints}}
+  \subsection{Tempo de trabalho: \textit{Sprints}}
 
- Times ágeis trabalham em iterações, que são um período de tempo fixo (\textit{time-boxed}) curto, de não mais que
- um mês de duração \cite{cohn06} \cite{scrum13}. O \textit{Scrum}, um \textit{framework} estrutural ágil,
- traz o conceito de \textit{Sprint} para o processo de desenvolvimento, que nada mais é que um \textit{container}
- temporal fixo para outros eventos do \textit{Scrum} \cite{scrum13}. Numa \textit{Sprint} é produzido um incremento
- do \textit{software}, com base no que foi estabelecido como escopo daquela \textit{Sprint}. Como uma \textit{Sprint} possui
- a duração fixa, mesmo que uma funcionalidade não tenha sido completada nesta \textit{Sprint}, a mesma é encerrada no prazo
- que foi determinado \cite{cohn06}.
+    Times ágeis trabalham em iterações, que são um período de tempo fixo (\textit{time-boxed}) curto, de não mais que
+    um mês de duração \cite{cohn06} \cite{scrum13}. O \textit{Scrum}, um \textit{framework} estrutural ágil,
+    traz o conceito de \textit{Sprint} para o processo de desenvolvimento, que nada mais é que um \textit{container}
+    temporal fixo para outros eventos do \textit{Scrum} \cite{scrum13}. Numa \textit{Sprint} é produzido um incremento
+    do \textit{software}, com base no que foi estabelecido como escopo daquela \textit{Sprint}. Como uma \textit{Sprint} possui
+    a duração fixa, mesmo que uma funcionalidade não tenha sido completada nesta \textit{Sprint}, a mesma é encerrada no prazo
+    que foi determinado \cite{cohn06}.
 
- De acordo com \citeonline{scrum13}, a
- \textit{sprint} é composta pela reunião de planejamento da \textit{sprint}, reuniões diárias, trabalho de desenvolvimento,
- revisão da \textit{sprint} e retrospectiva da \textit{sprint}. Os esforços de estimativas se concentram na reunião de
- planejamento da \textit{sprint}, onde são estimadas as histórias de usuários. No começo de cada \textit{sprint}, o time
- incorpora todo o conhecimento obtido com a \textit{sprint} passada para adaptar e ajustar o planejamento da próxima
- \textit{sprint} \cite{cohn06}.
+    De acordo com \citeonline{scrum13}, a
+    \textit{sprint} é composta pela reunião de planejamento da \textit{sprint}, reuniões diárias, trabalho de desenvolvimento,
+    revisão da \textit{sprint} e retrospectiva da \textit{sprint}. Os esforços de estimativas se concentram na reunião de
+    planejamento da \textit{sprint}, onde são estimadas as histórias de usuários. No começo de cada \textit{sprint}, o time
+    incorpora todo o conhecimento obtido com a \textit{sprint} passada para adaptar e ajustar o planejamento da próxima
+    \textit{sprint} \cite{cohn06}.
 
-\section{Estimativas com \textit{Story Points}}
+  \subsection{Estimativas com \textit{Story Points}}
 
- Em um projeto ágil
- que utiliza histórias de usuário, pode-se estimar o tamanho de uma história em \textit{story points}.
- \textit{Story points} representam o tamanho geral de uma história, envolvendo o esforço necessário, a complexidade e os
- riscos inerentes para desenvolver a história \cite{cohn06}. O número atribuído à história como seu tamanho não é relevante,
- o que importa é o valor relativo entre as histórias, que é obtido por comparação entre elas \cite{cohn06}.
+    Em um projeto ágil
+    que utiliza histórias de usuário, pode-se estimar o tamanho de uma história em \textit{story points}.
+    \textit{Story points} representam o tamanho geral de uma história, envolvendo o esforço necessário, a complexidade e os
+    riscos inerentes para desenvolver a história \cite{cohn06}. O número atribuído à história como seu tamanho não é relevante,
+    o que importa é o valor relativo entre as histórias, que é obtido por comparação entre elas \cite{cohn06}.
 
-  \subsection{\textit{Velocity}}
+      \subsubsection{\textit{Velocity}}
 
-    Numa abordagem ágil, a estimativa do tamanho é separada da estimativa da duração \cite{cohn06}.
-    Com o tamanho estimado, é preciso de outro conceito para se calcular a duração, o \textit{velocity}.
-    O \textit{velocity} mede a taxa de progresso do time, dizendo quantos pontos o time é capaz de desenvolver
-    numa \textit{sprint}, podendo ser calculado como a soma dos pontos concluídos durante a iteração \cite{cohn06}.
-    A melhor forma de se estabelecer o \textit{velocity} para um time é executando uma ou duas iterações e estimar o
-    \textit{velocity} a partir do \textit{velocity} observado \cite{cohn06}.
+	Numa abordagem ágil, a estimativa do tamanho é separada da estimativa da duração \cite{cohn06}.
+	Com o tamanho estimado, é preciso de outro conceito para se calcular a duração, o \textit{velocity}.
+	O \textit{velocity} mede a taxa de progresso do time, dizendo quantos pontos o time é capaz de desenvolver
+	numa \textit{sprint}, podendo ser calculado como a soma dos pontos concluídos durante a iteração \cite{cohn06}.
+	A melhor forma de se estabelecer o \textit{velocity} para um time é executando uma ou duas iterações e estimar o
+	\textit{velocity} a partir do \textit{velocity} observado \cite{cohn06}.
 
-  \subsection{Estimando a duração}
+      \subsubsection{Estimando a duração}
 
-    Com o tamanho do \textit{software} e o \textit{velocity} do time de desenvolvimento conhecido, fica fácil estimar
-    um prazo para o projeto, dividindo o tamanho pelo \textit{velocity}, obtendo assim a quantidade de \textit{sprints}
-    necessárias, e multiplicando pelo tamanho da \textit{sprint} \cite{cohn06}.
+	Com o tamanho do \textit{software} e o \textit{velocity} do time de desenvolvimento conhecido, fica fácil estimar
+	um prazo para o projeto, dividindo o tamanho pelo \textit{velocity}, obtendo assim a quantidade de \textit{sprints}
+	necessárias, e multiplicando pelo tamanho da \textit{sprint} \cite{cohn06}.
 
-    Utilizando uma abordagem por \textit{story points} em um projeto, separa-se completamente a estimativa do esforço
-    necessário da estimativa da duração do projeto, permitindo que ambos sejam estimados independentemente. A estimativa de
-    duração do projeto passa a ser derivada da estimativa de esforço \cite{cohn06}.
+	Utilizando uma abordagem por \textit{story points} em um projeto, separa-se completamente a estimativa do esforço
+	necessário da estimativa da duração do projeto, permitindo que ambos sejam estimados independentemente. A estimativa de
+	duração do projeto passa a ser derivada da estimativa de esforço \cite{cohn06}.
 
-  \subsection{Escala das estimativas}
-  \label{estimation_scales}
+      \subsubsection{Escala das estimativas}
+      \label{estimation_scales}
 
-      Utilizar uma única ordem de magnitude gera estimativas melhores (Miranda 2001; Saaty 1996 \textit{apud} \cite{cohn06}).
-      De acordo com \citeonline{cohn06}, uma escala de estimativa bastante utilizada e que se mostra bastante eficaz é a
-      sequência \textit{Fibonnaci}, que consiste em pontuar as histórias utilizando algum número da
-      sequência 1, 2, 3, 5, 8, 13, [...]. É importante estabelecer um valor máximo para a sequência para manter o intervalo
-      conhecido e não demasiado grande.
+	  Utilizar uma única ordem de magnitude gera estimativas melhores (Miranda 2001; Saaty 1996 \textit{apud} \cite{cohn06}).
+	  De acordo com \citeonline{cohn06}, uma escala de estimativa bastante utilizada e que se mostra bastante eficaz é a
+	  sequência \textit{Fibonnaci}, que consiste em pontuar as histórias utilizando algum número da
+	  sequência 1, 2, 3, 5, 8, 13, [...]. É importante estabelecer um valor máximo para a sequência para manter o intervalo
+	  conhecido e não demasiado grande.
 
-  \subsection{\textit{Planning Poker}}
+      \subsubsection{\textit{Planning Poker}}
 
-    O \textit{Planning Poker} é uma técnica utilizada para estimativas ágeis que envolve as três técnicas de estimativa
-    mais comuns (opinião do especialista, analogia e desagregação), gerando estimativas rápidas e confiáveis \cite{cohn06}.
+	O \textit{Planning Poker} é uma técnica utilizada para estimativas ágeis que envolve as três técnicas de estimativa
+	mais comuns (opinião do especialista, analogia e desagregação), gerando estimativas rápidas e confiáveis \cite{cohn06}.
 
-    Todos os desenvolvedores participam do \textit{Planning Poker}, que se inicia com a entrega das cartas que contém os
-    valores válidos para as histórias na escala definida (vide a sub-seção \ref{estimation_scales}).
-    Uma história é selecionada e é lida sua descrição pelo moderador
-    do jogo (usualmente o \textit{Product Owner}, que não participa das estimativas) para que então os jogadores possam
-    avaliar a história e pontuá-la. Se houver divergências entre as pontuações, é iniciado um debate para que seja definida
-    a pontuação final da história. Uma nova rodada é jogada para a mesma história caso os participantes não
-    entrem em um consenso \cite{grenning02}.
+	Todos os desenvolvedores participam do \textit{Planning Poker}, que se inicia com a entrega das cartas que contém os
+	valores válidos para as histórias na escala definida (vide a sub-seção \ref{estimation_scales}).
+	Uma história é selecionada e é lida sua descrição pelo moderador
+	do jogo (usualmente o \textit{Product Owner}, que não participa das estimativas) para que então os jogadores possam
+	avaliar a história e pontuá-la. Se houver divergências entre as pontuações, é iniciado um debate para que seja definida
+	a pontuação final da história. Uma nova rodada é jogada para a mesma história caso os participantes não
+	entrem em um consenso \cite{grenning02}.
 
-    O objetivo é fazer com o que os participantes convirjam para uma estimativa que será utilizada como pontuação da
-    história, lembrando que a proposta do \textit{Planning Poker} não é gerar uma estimativa acurada que perdure por
-    todo o ciclo de desenvolvimento, pois para atingir tal estimativa seria gasto um esforço
-    desnecessário \cite{cohn06} \cite{grenning02}.
+	O objetivo é fazer com o que os participantes convirjam para uma estimativa que será utilizada como pontuação da
+	história, lembrando que a proposta do \textit{Planning Poker} não é gerar uma estimativa acurada que perdure por
+	todo o ciclo de desenvolvimento, pois para atingir tal estimativa seria gasto um esforço
+	desnecessário \cite{cohn06} \cite{grenning02}.
 
-    \citeonline{cohn06} diz que existe uma acurácia máxima para uma estimativa
-    em relação ao esforço necessário para realizá-la, como ilustra a Figura \ref{fig:effort_accuracy}.
-    Portanto, não é preciso um debate demorado e detalhado durante o \textit{Planning Poker} para se definir
-    o tamanho das histórias, objetivando sempre ficar do lado esquerdo da curva apresentada na Figura \ref{fig:effort_accuracy}.
+	\citeonline{cohn06} diz que existe uma acurácia máxima para uma estimativa
+	em relação ao esforço necessário para realizá-la, como ilustra a Figura \ref{fig:effort_accuracy}.
+	Portanto, não é preciso um debate demorado e detalhado durante o \textit{Planning Poker} para se definir
+	o tamanho das histórias, objetivando sempre ficar do lado esquerdo da curva apresentada na Figura \ref{fig:effort_accuracy}.
 
+	\begin{figure}[!htb]
+	  \centering
+	  \includegraphics[scale=0.4]{figuras/effort_accuracy}
+	  \caption[Relação entre a acurácia e o esforço realizado para a estimativa.]
+		  {Relação entre a acurácia e o esforço realizado para a estimativa. Fonte: \cite{cohn06}}
+	  \label{fig:effort_accuracy}
+	\end{figure}
 
+  \subsection{\textit{Burndown}}
 
+    Objetivando conhecer a velocidade com a qual a equipe realiza seu trabalho, elabora-se um gráfico \textit{burndown} o qual é responsável por mostrar a quantidade de trabalho restante no início de cada iteração. Além disso, essa ferramenta se torna um poderoso indicador visual da rapidez com que uma equipe está se movendo em direção a sua meta \cite{cohn06}. O \textit{burndown} pode ser calculado por \textit{sprint}, por \textit{release}, por um projeto como um todo. No âmbito deste trabalho foi trabalhada a ideia de realização de \textit{burndown} por \textit{sprint}.
+
+    Em um gráfico \textit{burndown} por \textit{sprint} apresenta-se no eixo vertival o número de pontos de história restantes na sprint e no eixo horizontal os dias ao longo da \textit{sprint} \cite{cohn06}.
+
+\section{Processo de medição}
+  
+  "Medição é o processo pelo qual números ou símbolos são designados a atributos de entidades do mundo real para descrevê-los de 
+  acordo com regras claramente definidas" \cite{fenton97}. Para \citeonline{solingen99}, medição de \textit{software} é o processo
+  contínuo de definir, coletar e analisar dados obtidos no processo de desenvolvimento de \textit{software} para entender e controlar
+  o processo e seus produtos, bem como fornecer informações para melhorá-los.
+
+  Para atingir o objetivo do trabalho, será necessário a utilização de um processo de medição para obter informações a respeito
+  dos fatores de atraso identificados. Para a definição do processo de medição temos diversas abordagens, onde algumas serão
+  descritas nesta seção.
+  
+  \subsection{Norma ISO/IEC 15939:2007}
+  \label{15939}
+      A norma ISO/IEC 15939 define atividades e tarefas necessárias para implementar um processo de medição, adaptado do 
+      ciclo de melhoria \textit{Plan-Do-Check-Act} (PDCA) \cite{iso15939}. Uma característica importante desta norma é que 
+      ela traz o conceito de compromisso com o processo de medição, pois é necessário que a organização esteja comprometida
+      com o processo de medição para que a organizaçõa colabore com as medições e que o processo não seja um fracasso.
+      
+      Segundo a ISO/IEC 15939, o processo de medição consiste em quatro atividades sequenciadas em um ciclo iterativo,
+      conforme ilustra a Figura \ref{iso15939_model}. São elas \cite{iso15939}:
+      
+      \begin{itemize}
+	
+	\item \textbf{Estabelecer e manter o compromisso com o processo de medição} - Compreende as tarefas para definir os requisitos
+	      de medição (o compromisso com a medição é um deles) e alocar recursos;
+	      
+	\item \textbf{Planejar o processo de medição} - Compreende as tarefas de caracterização da organização, identificação das 
+	      necessidades de informação, selecão das métricas e definição dos aspectos necessários à coleta e avaliação de dados e 
+	      a comunicação dos resultados;
+	      
+	\item \textbf{Executar o processo de medição} - Compreende as tarefas de integração dos procedimentos de geração e coleção
+	      de dados e de análise e comunicação dos dados, coleta de dados, análise dos dados e elaboração dos produtos de
+	      informação e comunicação dos resultados aos interessados;
+	
+	\item \textbf{Avaliar o processo de medição} - Compreende as tarefas avaliação dos produtos de informação gerados e do
+	      próprio processo de medição e identificação de melhorias potenciais.
+	
+      \end{itemize}
+
+      \begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.55]{figuras/iso15939}
+	\caption[Modelo do processo proposto pela ISO/IEC 15939:2007.]
+		{Modelo do processo proposto pela ISO/IEC 15939:2007. Fonte: \cite{iso15939}}
+	\label{iso15939_model}
+      \end{figure}
+      
+      Pela Figura \ref{iso15939_model} é possível ver que o processo proposta por esta norma é dirigido por
+      necessidades de informação da organização \cite{iso15939}.
+
+  \subsection{Método \textit{Goal-Question-Metric} (GQM)}
+  \label{gqm}
+  
+    O GQM representa uma abordagem sistemática para a adequação e integração de objetivos para modelos do processo de software,
+    que defende que a medição deve ser orientada a objetivos (Basili et al, 1994 \textit{apud} \cite{solingen99}). 
+    \citeonline{solingen99} afirma que "o resultado obtido com a aplicação do GQM é a especificação de uma programa
+    de medição direcionado para um conjunto particular de problemas e um conjunto de regras para a interpretação dos dados da medição".
+    
+    O modelo do GQM propõe uma abordagem \textit{top-down} para a definição das métricas e uma \textit{bottom-up} para a interpretação
+    das métricas, como ilustra a Figura \ref{gqm_model}.
+    
     \begin{figure}[!htb]
       \centering
-      \includegraphics[scale=0.4]{figuras/effort_accuracy}
-      \caption[Relação entre a acurácia e o esforço realizado para a estimativa.]
-	      {Relação entre a acurácia e o esforço realizado para a estimativa. Fonte: \cite{cohn06}}
-      \label{fig:effort_accuracy}
+      \includegraphics[scale=0.5]{figuras/gqm_model}
+      \caption[Modelo do GQM.]
+	      {Modelo do GQM. Fonte: Basili et al, 1994 \textit{apud} \cite{solingen99}}
+      \label{gqm_model}
     \end{figure}
+<<<<<<< HEAD
 
   \section{\textit{Burndown}}
 
@@ -160,3 +237,85 @@
 
 
 
+=======
+    
+    Assim como ilustra a Figura \ref{gqm_model}, para o processo de definição de métricas, primeiramente são estabelecidos objetivos
+    de medição, que devem estar alinhados com os objetivos de negócio da organização,
+    que então são refinados em questões que atendam a estes objetivos. Cada questão é refinada em métricas que são
+    capazes de prover informações que respondam à questão. Já o processo de interpretação é feito a partir das métricas, que respondem
+    às questões que as derivaram, cuja questões atendem ao seu objetivo inicial \cite{solingen99}.
+    
+    O método GQM contém quatro fases, como ilustra a Figura \ref{gqm_phases}, segundo \citeonline{solingen99}:
+    
+    \begin{itemize}
+     
+     \item \textbf{Fase de Planejamento}, onde o projeto para aplicação da medição é selecionado, caracterizado e planejado.
+     
+     \item \textbf{Fase de Definição}, onde o programa de medição é definido e documentado.
+     
+     \item \textbf{Fase de coleta de dados}, onde os dados necessários são coletados.
+     
+     \item \textbf{Fase de interpretação}, onde os dados coletados são processados e ocorre o processo de interpretação supracitado.
+     
+    \end{itemize}
+  
+    \begin{figure}[!htb]
+      \centering
+      \includegraphics[scale=0.5]{figuras/gqm_phases}
+      \caption[Fases do GQM.]
+	      {Fases do GQM. Fonte: \cite{solingen99}}
+      \label{gqm_phases}
+    \end{figure}
+    
+\section{Fatores de atraso}
+
+  Para a execução deste trabalho buscou-se identificar alguns fatores que pudessem ocasionar os atrasos. Para esse trabalho a definição de atraso
+  pode ser resumida na não entrega de todas as histórias planejadas na \textit{Sprint}.
+
+  \subsection{Erros nas estimativas em \textit{Story Points}}
+  
+  De acordo com \cite{leo2013}, um dos fatores que pode ocasionar atrasos é a aceitação de um prazo final, por parte do gerente
+  de projeto, sem realizar uma revalidação das estimativas para o projeto.
+  % apud (Mulcahy, 2009)
+
+  \subsection{Dificuldades na linguagem}
+  
+  \cite{melo2011} traz a linguagem de programação como um dos fatores, dentro da experiência e capacidades do time, que impactam
+  na produtividade da equipe, assim, deixando claro que o entendimento acerca da linguagem pode ter impacto sobre as entregas 
+  previstas.
+  
+  \subsection{Tamanho da \textit{Sprint}}
+  
+  De acordo com \cite{cogn2011}, uma \textit{Sprint} com uma maior duração provê uma falsa sensação de calmaria, pois pode reduzir
+  a velocidade do time. Quando uma \textit{Sprint} é menor, o time se atém a fazer o necessário para assim conseguir implementar
+  o que é planejado para aquela \textit{Sprint}.
+  
+%  \subsection{Mudança de metodologia}
+  
+  \subsection{Demora na iniciação do desenvolvimento}
+  
+  Conforme \cite{cogn2011} traz, um aspecto da natureza das pessoas é procrastinar o trabalho que eles sabem que precisa ser
+  feito. Ainda de acordo com \cite{cogn2011}, assim como um estudante de graduação que possui um trabalho planejado desde o início do semestre, cuja entrega é no 
+  final do mesmo, pode deixar este sem prioridade e realiza-lo nas últimas semanas, um time ágil pode fazer o mesmo caso sintam
+  que a \textit{Sprint} está longa, ao invés de aproveitar melhor o maior tempo disponível.
+  
+  \subsection{Dificuldade na comunicação}
+  
+  \cite{leo2013} traz a má comunicação dos \textit{stakeholders} como um ponto de causa de atrasos, pois tem como resultado
+  o não cumprimento de prazos.
+  % apud Molena (2011)
+  % apud (Chapters Brasileiros do PMI, 2008)
+  
+  \subsection{Dedicação parcial}
+  
+  Durante uma análise entre dois projetos, \cite{melo2011} definiu fatores para realizar uma avaliação da produtividade de 
+  dois times. Um desses fatores era a dedicação ao desenvolvimento, sendo que tal fator pesava negativamente para a produtividade
+  pela quebra das ideias, algo que não costuma ocorrer em um time que se dedica \textit{full-time} ao desenvolvimento.
+  
+  \subsection{Dificuldade no entendimento das histórias}
+  
+  Uma boa solução para evitar atrasos e facilitar o entendimento das histórias é quebrar as histórias em tarefas menores, 
+  escolher histórias oportunamente e entregar essas histórias mais cedo na \textit{Sprint}, sendo que assim o entendimento 
+  é facilitado e quaisquer dúvidas poderão ser resolvidas antes da \textit{deadline} planejada. \cite{cogn2011}
+  
+>>>>>>> 1bf20d5a5df5cd6fa9efeb96cf3abf5c60d9e683
