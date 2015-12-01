@@ -55,44 +55,16 @@
 	\begin{itemize}
 
 	 \item \textbf{Q1}. \textit{Qual a influência da procrastinação no atraso das entregas?}
-	 	\begin{itemize}
-			\item Postergação de trabalho.
-			\item Atraso em tarefas dependentes.
-			\item Falta de aproveitamento do tempo entre tarefas.
-		\end{itemize}
+		\subitem A procrastinação gera postergação do trabalho que resulta em sobrecarga ao final da sprint, podendo provocar atraso da entrega das atividades.
 
 	 \item \textbf{Q2}. \textit{Qual a influência dos erros das estimativas no atraso das entregas?}
-	 	\begin{itemize}
-			\item Ilusão do estado atual do projeto.
-			\item Comprometimento do \textit{burndown}.
-			\item Desbalanceamento de trabalho.
-			\item Falta de precisão na medida de trabalho feito por desenvolvedor.
-		\end{itemize}
+		\subitem Os erros das estimativas provocam prejuízo no entendimento do valor de cada história, prejudicando a divisão das histórias, o valor do trabalho, além de gerar falso entendimento sobre o estado atual do projeto, aumentando a chance de provocar atraso na entrega.
 
 	 \item \textbf{Q3}. \textit{Qual a influência da dificuldade na linguagem no atraso das entregas?}
-	 	\begin{itemize}
-			\item Aumento da chance de erros no código.
-			\item Investimento de tempo em aprendizado.
-			\item Aumento da possibilidade de fazer solução não ótimas.
-		\end{itemize}
+		\subitem A falta de domínio da linguagem diminui a noção de trabalho que pode ser realizado em determinado tempo, por não se compreender completamente o contexto em que se está trabalhando, aumentando a chance de encontrar novos obstáculos, tendo que despender mais tempo do que o planejado para resolve-los, podendo provocar atrasos na entrega.
 
 	 \item \textbf{Q4}. \textit{Qual a influência da dificuldade de comunicação no atraso das entregas?}
-	 	\begin{itemize}
-			\item Falta de conhecimento do estado do projeto.
-		\end{itemize}
-
-	 \item \textbf{Q5}. \textit{Qual a influência de tarefas dependentes no atraso das entregas?}
-	 	\begin{itemize}
-			\item Geração de espaços entre atividades.
-			\item **Quanto maior a dependência entre tarefas maior a chance de procrastinar.
-		\end{itemize}
-
-	 \item \textbf{Q6}. \textit{Qual a influência do dominio da metodologia ágil no atraso das entregas?}
-	 	\begin{itemize}
-			\item Reconhecimento do valor do \textit{burndown}.
-			\item Reconhecimento do valor da \textit{planning}.
-			\item Reconhecimento do valor da retrospectiva.
-		\end{itemize}
+		\subitem Através da comunicação, o time pode se planejar corretamente e se adequar aos problemas reais da sprint. A dificuldade de comunicação proporciona falta de conhecimento sobre o estado estado atual da sprint, caso a percepção de trabalho a realizar seja maior que a esperada pelo time, aumenta a chance de atraso na entrega.
 
 	\end{itemize}
 
@@ -205,7 +177,7 @@
 
 		$$ M7_i = M6_i - M5_i $$
 
-	      \subsubitem Onde $i = número da história referente às métricas$
+	      \subsubitem Onde $i = número\ da\ história\ referente\ às\ métricas$
 
 	   \subitem \textbf{Questões respondidas}: Esta métrica ajuda a responder à Questão Q2, pois permite parte da análise
 		    dos erros nas estimativas.
@@ -262,6 +234,14 @@
 	   \subitem Explicar a métrica, informando a unidade de medida o método de coleta dessa métrica. Dizer quais questões essa
 		    métrica ajuda a responder.
 
+	    \subitem \textbf{Descrição}: Esta métrica representa o grau de percepção do time sobre a comunicação. O conhecimento sobre o estado atual da sprint, os problemas que as duplas estão enfrentando e qual o progresso realizado. O estado atual da comunicação se pode dar em três estados: ruim, boa ou ótima. Para o caso ruim, o time não tem noção do que esta acontecendo dentro de cada par de desenvolvimento, qual o progresso realizado, ou quais problemas estão enfrentando. Para o caso bom, o time se comunica de forma simples sem transparecer o real problema, as duplas tem noção do progresso geral do time através do burndown. No estado ótimo, as duplas se comunicam e compreendem o progresso e problemas de cada uma.
+
+	   \subitem \textbf{Unidade}: Adimensional.
+
+	   \subitem \textbf{Forma de coleta}: Na reuniões diárias e de retrospectivas.
+
+	   \subitem \textbf{Questões respondidas}: Esta métrica está atrelada à Questão Q4, ela tenta expressar em qual estado a comunicação do time se encontra. Para então propor juntamente com o time de desenvolvimento formas de melhorar a comunicação.
+
 	\end{itemize}
 
       \vfill
@@ -295,5 +275,25 @@
       As coletas são documentadas em uma planilha online utilizando-se a ferramenta online do _Google_ (_Drive_).
 
       \subsection{Análise dos dados}
+
+      	Nesta subseção serão descritas as regras para a análise dos dados coletados, de forma a responder às questões definidas.
+
+      	\subsubsection{Questão Q1}
+
+      		\textbf{Métricas envolvidas}: M1, M2, M3 e M4.
+
+      		Esta questão será respondida calculando a métrica M2, a partir dos valores da métrica M1, e a métrica M4, a partir dos valores
+      		da métrica M3.
+
+      		Para uma análise geral do projeto, será realizada uma simulação do andamento da \textit{sprint} considerando uma quantidade de
+      		pontos definida pela métrica M4.Média de pontos alocados por \textit{sprint}, e utilizando o valor da métrica M2.Média de pontos realizados por dia para a queima dos pontos durante a \textit{sprint}, simulando o começo do trabalho no início da \textit{sprint}.
+
+      		Na simulação citada, caso a quantidade média de pontos alocados na \textit{sprint} tenham sido cumpridos considerando
+      		o \textit{velocity} diário médio, temos que a procrastinação do trabalho durante a \textit{sprint} implicou
+      		consideravelmente nos atrasos.
+
+      		A simulação também pode ser feita variando o dia de início das atividades.
+
+      		A análise pode ser realizada por \textit{sprint}, utilizando apenas o valor da métrica M3 da \textit{sprint} desejada, ao invés da métrica M4.
 
       \subsection{Comunicação dos resultados}
