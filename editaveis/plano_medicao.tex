@@ -295,7 +295,7 @@
       		Esta questão será respondida calculando a métrica M2, a partir dos valores da métrica M1, e a métrica M4, a partir dos valores
       		da métrica M3.
 
-      		Para uma análise geral do projeto, será realizada uma simulação do andamento da \textit{sprint} considerando uma quantidade de
+      		Para uma análise geral do projeto, de forma a responder a questão, será realizada uma simulação do andamento da \textit{sprint} considerando uma quantidade de
       		pontos definida pela métrica M4.Média de pontos alocados por \textit{sprint}, e utilizando o valor da métrica M2.Média de pontos realizados por dia para a queima dos pontos durante a \textit{sprint}, simulando o começo do trabalho no início da \textit{sprint}.
 
       		Na simulação citada, caso a quantidade média de pontos alocados na \textit{sprint} tenham sido cumpridos considerando 
@@ -304,6 +304,24 @@
 
       		A simulação também pode ser feita variando o dia de início das atividades.
 
-      		A análise pode ser realizada por \textit{sprint}, utilizando apenas o valor da métrica M3 da \textit{sprint} desejada, ao invés da métrica M4. 
+      		A análise pode ser realizada por \textit{sprint}, utilizando apenas o valor da métrica M3 da \textit{sprint} desejada, ao invés da métrica M4.
+
+  		\subsubsection{Questão Q2}
+
+  			\textbf{Métricas envolvidas}: M3, M4, M5, M6, M7, M8, M9 e M10.
+ 
+  			Esta questão será respondida calculando as métricas M7 e M8, a partir das métricas M5 e M6, e da métrica M9, a partir dos
+  			valores da métrica M7.
+
+  			Para uma análise geral do projeto, de forma a responder esta questão, será calculada a métrica M7.Erro na estimativa por história para cada história, de acordo com os valores
+  			de pontuação (M5) e repontuação (M6) da história, para então calcular o erro médio (M9) na pontuação das histórias e associar
+  			este erro médio com o valor médio de pontos alocados por \textit{sprint} (M4, calculada com valores de M3), somando-se os valores
+  			das métricas M9 e M4, gerando um novo valor que será comparado com o \textit{velocity} da equipe por \textit{sprint} (M10) para ver se, com o erro associado, seria possível entregar ou não a quantidade de pontos propostos.
+
+  			A precisão da estimativa (M8) é uma métrica extra que fornece outra forma de analisar o erro nas estimativas. Se o valor da métrica
+  			for igual a 1, significa que não houve erros na estimativa. Caso o valor da métrica seja menor que 1, significa que a estimativa estava
+  			superestimada. Caso o valor da métrica esja maior que 1, significa que a estimativa estava subestimada.
+
+  			A análise pode ser feita por \textit{sprint}, utilizando apenas as histórias da \textit{sprint} analisada para se calcular o erro associado e a precisão das estimativas.
       
       \subsection{Comunicação dos resultados}
